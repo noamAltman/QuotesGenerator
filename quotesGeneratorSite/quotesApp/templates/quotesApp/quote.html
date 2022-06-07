@@ -1,0 +1,10 @@
+{% extends 'quotesApp/base.html' %}
+
+{% block content %}
+{% load static %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'quotesApp/styleQuote.css' %}">
+<div class = "output">
+    <h1>{{var}}</h1>
+</div>
+{% endblock %}

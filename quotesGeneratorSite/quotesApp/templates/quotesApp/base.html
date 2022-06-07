@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Quotes Generator Website</title>
+        <link rel="stylesheet" href="{% static 'quotesApp/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="welcome-text">
+                <h1>Quotes Generator</h1>
+                <p>
+                    This is Quotes Generator.
+                    Please enter a character, and a topic to quote about:
+                </p>
+            </div>
+            <div class="block">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
